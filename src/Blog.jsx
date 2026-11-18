@@ -40,7 +40,7 @@ const [sortOrder, setSortOrder] = useState('descending')
       <br />
       <hr />
       Filter by:
-      <PostFilter field='author' value = { author }  onChange = {(value) => setAuthor(value)}/>
+      <PostFilter field='author' value = { author }  onChange = {(value) => setAuthor(value)} />
       <br />
       <PostSorting fields={['createdAt', 'updatedAt', 'author']}  value = {sortBy} onChange = {(value) => setSortBy(value)}
         orderValue = {sortOrder}
