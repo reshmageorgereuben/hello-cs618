@@ -17,7 +17,7 @@ export function postsRoutes(app) {
       if (author && tag) {
         return res
           .status(400)
-          .json({ error: "query by eithrt auhtor or tag, not both" });
+          .json({ error: "query by either author or tag, not both" });
       } else if (author) {
         return res.json(await listPostsByAuthor(author, options));
       } else if (tag) {
@@ -72,9 +72,5 @@ export function postsRoutes(app) {
       return res.status(500).end()
     }
   })
-
-  
-
-  
 
 }
